@@ -6,6 +6,8 @@ FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
 
 LABEL Loreto Parisi (loretoparisi@gmail.com)
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # install deps
 RUN apt-get update && apt-get install -y \
     build-essential \
