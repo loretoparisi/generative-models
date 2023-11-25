@@ -3,11 +3,28 @@
 ![sample1](assets/000.jpg)
 
 ## Docker
+### Build docker image
+To build the docker image
+```bash
+./build.sh genmodels
+```
+
+### Run docker container
+to run the docker image with gpu support
+```bash
+./run.sh genmodels
+```
 
 ### Dependencies
 Installed dependencies
 ```bash
 PyWavelets-1.5.0 aiohttp-3.9.0 aiosignal-1.3.1 altair-5.1.2 antlr4-python3-runtime-4.9.3 appdirs-1.4.4 async-timeout-4.0.3 black-23.7.0 blinker-1.7.0 braceexpand-0.1.7 cachetools-5.3.2 chardet-5.1.0 clip-1.0 cmake-3.27.7 contourpy-1.2.0 cycler-0.12.1 docker-pycreds-0.4.0 einops-0.7.0 fairscale-0.4.13 fire-0.5.0 fonttools-4.45.1 frozenlist-1.4.0 ftfy-6.1.3 gitdb-4.0.11 gitpython-3.1.40 huggingface-hub-0.19.4 importlib-metadata-6.8.0 invisible-watermark-0.2.0 jsonschema-4.20.0 jsonschema-specifications-2023.11.1 kiwisolver-1.4.5 kornia-0.6.9 lightning-utilities-0.10.0 lit-17.0.5 markdown-it-py-3.0.0 matplotlib-3.8.2 mdurl-0.1.2 multidict-6.0.4 mypy-extensions-1.0.0 natsort-8.4.0 ninja-1.11.1.1 nvidia-cublas-cu11-11.10.3.66 nvidia-cuda-cupti-cu11-11.7.101 nvidia-cuda-nvrtc-cu11-11.7.99 nvidia-cuda-runtime-cu11-11.7.99 nvidia-cudnn-cu11-8.5.0.96 nvidia-cufft-cu11-10.9.0.58 nvidia-curand-cu11-10.2.10.91 nvidia-cusolver-cu11-11.4.0.1 nvidia-cusparse-cu11-11.7.4.91 nvidia-nccl-cu11-2.14.3 nvidia-nvtx-cu11-11.7.91 omegaconf-2.3.0 open-clip-torch-2.23.0 opencv-python-4.6.0.66 pandas-2.1.3 pathspec-0.11.2 platformdirs-4.0.0 protobuf-3.20.3 pudb-2023.1 pyarrow-14.0.1 pydeck-0.8.1b0 pyparsing-3.1.1 python-dateutil-2.8.2 pytorch-lightning-2.0.1 pyyaml-6.0.1 referencing-0.31.0 regex-2023.10.3 rich-13.7.0 rpds-py-0.13.1 safetensors-0.4.0 scipy-1.11.4 sentencepiece-0.1.99 sentry-sdk-1.37.1 setproctitle-1.3.3 smmap-5.0.1 streamlit-1.28.2 tenacity-8.2.3 tensorboardx-2.6 termcolor-2.3.0 timm-0.9.12 tokenizers-0.12.1 toml-0.10.2 torch-2.0.1 torchaudio-2.0.2 torchdata-0.6.1 torchmetrics-1.2.0 torchvision-0.15.2 tornado-6.3.3 transformers-4.19.1 triton-2.0.0 tzdata-2023.3 tzlocal-5.2 urwid-2.2.3 urwid_readline-0.13 validators-0.22.0 wandb-0.16.0 watchdog-3.0.0 wcwidth-0.2.12 webdataset-0.2.79 xformers-0.0.22 yarl-1.9.3 zipp-3.17.0
+```
+
+Please refer to the file `requirements-lock.txt` for all packages installed. To regenerate installed dependecies please run
+```bash
+./run.sh genmodels
+sh-4.2$ ./versions.sh
 ```
 
 ## News
