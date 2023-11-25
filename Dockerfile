@@ -28,9 +28,5 @@ RUN pip install -r /opt/program/requirements.txt
 # copy src
 COPY . /opt/program/
 
-RUN cd /opt/program/checkpoints &&
-	curl "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid/resolve/main/svd.safetensors?download=true" -L -O &&
-	cd ..
-
 # default cmd executes inference
 CMD ["bash"]

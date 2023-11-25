@@ -27,6 +27,19 @@ Please refer to the file `requirements-lock.txt` for all packages installed. To 
 sh-4.2$ ./versions.sh
 ```
 
+### Weights
+The safetensors weights are placed in the `checkpoints` folder, that is automatically created for your convenience. To download the required weights please run 
+```bash
+./download.sh
+```
+The folder `checkpoints` is attached to the running image:
+```bash
+./run.sh genmodels
+root@4bca13f8e912:/opt/program# ls -l checkpoints/
+total 9335580
+-rw-rw-r-- 1 1000 1000 9559625980 Nov 25 13:50 svd.safetensors
+```
+
 ## News
 
 **November 21, 2023**
