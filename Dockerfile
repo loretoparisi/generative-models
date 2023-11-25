@@ -2,7 +2,7 @@
 #
 # @author loretoparisi at gmail dot com
 #
-FROM pytorchlightning/pytorch_lightning:base-cuda-py3.10-torch2.0-cuda11.8.0
+FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
 
 LABEL Loreto Parisi (loretoparisi@gmail.com)
 
