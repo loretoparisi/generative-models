@@ -8,6 +8,8 @@ LABEL Loreto Parisi (loretoparisi@gmail.com)
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV ENV PIP_ROOT_USER_ACTION=ignore
+ENV TRANSFORMERS_CACHE=/opt/program/checkpoints
+ENV TORCH_HOME=/opt/program/checkpoints
 
 # install deps
 RUN apt-get update && apt-get install -y \
