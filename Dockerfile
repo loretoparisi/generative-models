@@ -14,6 +14,7 @@ ENV TORCH_HOME=/opt/program/checkpoints
 # install deps
 RUN apt-get update && apt-get install -y \
     build-essential \
+    curl \
     git
 
 # fix: ImportError: libGL.so.1: cannot open shared object file: No such file or directory    
