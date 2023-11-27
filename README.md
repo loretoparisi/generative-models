@@ -13,6 +13,7 @@ To build the docker image
 to run the docker image with gpu support
 ```bash
 ./run.sh genmodels
+/opt/program# PYTHONPATH=$(pwd) python scripts/sampling/simple_video_sample.py
 ```
 
 ### Dependencies
